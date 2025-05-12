@@ -81,7 +81,7 @@ export const App: React.FC = () => {
           }}
           className={
             SortType.LENGTH === sortField
-              ? 'button is-succes'
+              ? 'button is-success'
               : 'button is-success is-light'
           }
           type="button"
@@ -126,7 +126,7 @@ export const App: React.FC = () => {
 
       <ul>
         {visibleGoods.map(good => (
-          <li key="Good" data-cy="Good">
+          <li key={good} data-cy="Good">
             {good}
           </li>
         ))}
